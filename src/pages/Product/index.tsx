@@ -1,9 +1,9 @@
 import UserLayout from "../../components/Layout/UserLayout";
 
-const Profile = () => {
+const Product = () => {
     return ( 
         <UserLayout></UserLayout>
      );
 }
  
-export default Profile;
+export default Product;
