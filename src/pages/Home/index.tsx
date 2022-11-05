@@ -1,7 +1,6 @@
 import CardProduct from "../../components/Card/CardProduct";
 import UserLayout from "../../components/Layout/UserLayout";
 import Slide1 from "../../images/Home/slider-1.png";
-import Slide2 from "../../images/Home/slider-2.png";
 import { Helmet } from "react-helmet";
 
 import "../../components/Swiper/style.css";
@@ -30,8 +29,10 @@ const Home = () => {
                     modules={[Pagination, FreeMode, Mousewheel]}
                     className="mySwiper mb-10 w-full">
                     <SwiperSlide>
-                        <div className="bg-cover w-full h-[300px] bg-center rounded-[20px]" style={{ backgroundImage: `url(${Slide1})` }}></div>
-                        {/* <img 
+                            <a href="https://www.github.com" target="_blank" rel="noreferrer" className="bg-cover w-full h-[300px] bg-center rounded-[20px]" style={{ backgroundImage: `url(${Slide1})` }}>
+                                <span></span>
+                            </a>
+                            {/* <img 
                         src="https://assets.klikindomaret.com/products/20025762/20025762_1.jpg" 
                         alt="piattos"
                         className="w-full bg-cover"

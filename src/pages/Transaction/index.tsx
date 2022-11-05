@@ -1,8 +1,13 @@
+import { Helmet } from "react-helmet";
 import UserLayout from "../../components/Layout/UserLayout";
 
 const Transaction = () => {
     return ( 
-        <UserLayout></UserLayout>
+        <UserLayout>
+            <Helmet>
+                <title>Transaksi</title>
+            </Helmet>
+        </UserLayout>
      );
 }
  
