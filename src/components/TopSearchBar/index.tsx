@@ -16,10 +16,10 @@ const TopSearchBar = () => {
                 </div>
             </form>
             <div className="w-1/5 flex justify-around">
-                <button className="hover:opacity-60 transition duration-300">
+                <button className="hover:opacity-60 hover:rotate-12 transition duration-300">
                     <img src={ShopCart} alt="shopcart" className="w-[25px]" />
                 </button>
-                <button className="hover:opacity-60 transition duration-300">
+                <button className="hover:opacity-60 hover:rotate-12 transition duration-300">
                     <img src={Notification} alt="notification" className="w-[23px]" />
                 </button>
             </div>

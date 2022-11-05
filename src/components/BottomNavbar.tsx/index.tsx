@@ -42,7 +42,7 @@ const BottomNavbar = () => {
                             <a
                             href={data.href}
                             key={index}
-                            className={`hover:opacity-70 hover:border-b-orange-500 ${window.location.pathname === data.href && 'border-b-orange-500'} border-b-[3px] border-b-transparent transition duration-300 flex flex-col items-center text-orange-500`}>
+                            className={`hover:opacity-70 hover:border-b-orange-500 ${window.location.pathname === data.href ? 'border-b-orange-500' : 'border-b-transparent'} border-b-[3px] transition duration-300 flex flex-col items-center text-orange-500`}>
                                 <img className="mb-1 h-[22px]" src={data.icon} alt={data.name}></img>
                                 <p className="mb-1">{data.name}</p>
                             </a>

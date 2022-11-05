@@ -5,7 +5,7 @@ interface Props {
 
 const CardProduct = ({ imageUrl, className }: Props) => {
     return (
-        <div className="cursor-pointer transition duration-300 min-w-[180px] w-[180px] md:w-[48%] m-1 hover:shadow p-3 rounded border-[1px] border-gray-100">
+        <div className="cursor-pointer transition duration-300 min-w-[180px] w-[180px] w-[48%] m-1 hover:shadow p-3 rounded border-[1px] border-gray-100">
             <div
                 className={"bg-cover w-full min-h-[200px] " + className}
                 style={{ backgroundImage: `url('${imageUrl}')` }}
