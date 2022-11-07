@@ -31,7 +31,7 @@ const Home = () => {
                     // mousewheel
                     spaceBetween={30}
                     modules={[Pagination, Mousewheel, Autoplay]}
-                    className="mySwiper mb-10 w-full">
+                    className="mySwiper mb-10 w-full mt-5">
                     <SwiperSlide>
                         <a href="https://www.github.com" target="_blank" rel="noreferrer" className="bg-cover w-full h-[300px] bg-center rounded-[20px]" style={{ backgroundImage: `url(${Slide1})` }}>
                             <span></span>
@@ -44,6 +44,7 @@ const Home = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="bg-cover w-full h-[300px] bg-center rounded-[20px]" style={{ backgroundImage: `url(https://img.okezone.com/content/2022/06/27/406/2618841/gajian-tiba-saatnya-wisata-bareng-mister-aladin-mumpung-lagi-ada-promo-hingga-rp150-000-khusus-nasabah-bni-GOe1W3Yfhr.JPG)` }}></div>
+
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="bg-cover w-full h-[300px] bg-center rounded-[20px]" style={{ backgroundImage: `url(https://lelogama.go-jek.com/post_featured_image/promo-hangout-bandung-1png.png)` }}></div>
