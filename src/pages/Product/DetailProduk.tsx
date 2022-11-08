@@ -3,9 +3,9 @@ import { Helmet } from "react-helmet";
 import BreadCrumbs from "../../components/BreadCrumbs";
 import Button from "../../components/Button";
 import LikeButton from "../../components/Button/LikeButton";
+import CardPenjual from "../../components/Card/CardPenjual";
 import CardProduct from "../../components/Card/CardProduct";
 import UserLayout from "../../components/Layout/UserLayout";
-import Filafest from "../../images/Product/detail/filafest.png";
 
 const imageData = [
     {
@@ -82,13 +82,10 @@ const DetailProduk = () => {
                         <h3 className="font-bold text-xl mb-3 capitalize">Deskripsi Produk</h3>
                         <p>Salah satu varian yang banyak digemari adalah risol mayo. Biasanya, isi risol mayo campuran antara mayonaise dengan sosis atau daging asap. Namun, kamu juga bisa menambahkan isian lain, seperti telur atau berbagai jenis sayuran.</p>
                     </div>
-                    <div className="mt-5 flex items-start provider mx-auto w-full p-3 border rounded-lg">
-                        <img src={Filafest} alt='filafest' className="w-[100px]" />
-                        <div className="ml-5">
-                            <h1 className="font-bold text-xl">Filafest</h1>
-                            <p className="capitalize">official account dies natalis filkom UB</p>
-                        </div>
-                    </div>
+                    <CardPenjual
+                    company="Filafest"
+                    caption="official account dies natalis filkom ub"
+                    />
                     <div className="my-5">
                         <h1 className="capitalize text-xl font-bold">masih fresh</h1>
                         <p className="text-[14px] mt-2">Masi seger nih, fresh dari oven 🤩</p>

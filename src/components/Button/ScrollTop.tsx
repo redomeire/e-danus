@@ -12,7 +12,7 @@ const ScrollTop = () => {
 
     return (
         <div
-            className={`absolute right-5 bottom-24`}
+            className={`absolute right-5 bottom-24 z-40`}
         >
             <Link to="top" >
                 <Button

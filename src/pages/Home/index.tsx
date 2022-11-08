@@ -12,6 +12,7 @@ import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Mousewheel, Autoplay } from "swiper";
 import Button from "../../components/Button";
+import React from "react";
 
 const Home = () => {
     return (
@@ -59,11 +60,13 @@ const Home = () => {
                             <h1 className="capitalize text-xl font-bold">rekomendasi produk</h1>
                             <p className="text-[14px] mt-2">Lihat rekomendasi biar ga salah pilih 😍</p>
                         </div>
+                        <a href="/product">
                         <Button
                             color="primary"
                             variant="contained"
                             className="font-normal mb-2 capitalize"
                         >lihat semua</Button>
+                        </a>
                     </div>
                     <div className="w-full flex flex-wrap">
                         <CardProduct imageUrl="https://cf.shopee.co.id/file/8004ca430054248dc4beeea282fc1faa" />

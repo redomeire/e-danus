@@ -2,10 +2,15 @@ import { useNavigate } from "react-router-dom";
 
 interface Props {
     imageUrl?: string,
-    className?: string
+    className?: string,
+    title?: string
 }
 
-const CardProduct = ({ imageUrl, className }: Props) => {
+const CardProduct = ({ 
+    imageUrl, 
+    className,
+    title
+}: Props) => {
 
     const navigate = useNavigate();
 
@@ -21,7 +26,7 @@ const CardProduct = ({ imageUrl, className }: Props) => {
             src={imageUrl}
             ></img>
             <div className="p-2">
-                <h3 className="font-bold my-2">Risol Mayo</h3>
+                <h3 className="font-bold my-2">{title || 'Risol Mayo'}</h3>
                 <div className="flex items-center justify-between">
                     <p>Rp 16.000</p>
                     <button className="text-xs capitalize rounded-full p-1 px-2 bg-yellow-100 text-orange-500">Sisa Stok 10</button>
