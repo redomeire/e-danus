@@ -31,7 +31,7 @@ const Home = () => {
                     // mousewheel
                     spaceBetween={30}
                     modules={[Pagination, Mousewheel, Autoplay]}
-                    className="mySwiper mb-10 w-full mt-5">
+                    className="mySwiper mb-10 w-full">
                     <SwiperSlide>
                         <a href="https://www.github.com" target="_blank" rel="noreferrer" className="bg-cover w-full h-[300px] bg-center rounded-[20px]" style={{ backgroundImage: `url(${Slide1})` }}>
                             <span></span>

@@ -3,11 +3,12 @@ import Loading from "../../images/utils/loading.svg";
 
 interface Props {
     children: React.ReactNode,
-    color: "primary" | "secondary",
+    color: "primary" | "secondary" | "black",
     disable?: boolean,
     variant?: "base" | "outlined" | "contained",
     className?: string,
     state?: "loading" | "success" | "error",
+    onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
 
 const Button = ({children, 
@@ -15,7 +16,8 @@ const Button = ({children,
     disable, 
     variant,
     className,
-    state
+    state,
+    onClick
 }: Props) => {
 
     const checkButton = () => {
@@ -53,6 +55,9 @@ const Button = ({children,
                 text = "text-[#FE724C]"
         }
 
+        else 
+            text = "text-black"
+
         if(state === 'success') {
             background = 'bg-[#5CC689]'
             text = 'text-white'
@@ -64,6 +69,7 @@ const Button = ({children,
 
     return (
         <button 
+        onClick={onClick}
         className={`${!disable ? 'hover:opacity-80' : 'cursor-not-allowed brightness-75'} flex items-center justify-center transition duration-200 ${state !== null ? 'rounded-full w-fit min-w-20' : 'rounded-full'} p-2 ${checkButton()} ` + className}
         disabled={disable}
         >

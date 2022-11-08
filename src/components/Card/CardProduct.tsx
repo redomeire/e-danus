@@ -5,9 +5,9 @@ interface Props {
 
 const CardProduct = ({ imageUrl, className }: Props) => {
     return (
-        <div className="cursor-pointer transition duration-300 min-w-[180px] sm:w-[48%] w-full m-1 hover:shadow p-3 rounded border-[1px] border-gray-100 hover:scale-105">
+        <div className="cursor-pointer transition duration-300 min-w-[180px] sm:w-[46%] w-full m-2 hover:shadow-lg rounded-xl border-[1px] border-gray-100">
             <div
-                className={"md:block hidden bg-cover bg-center w-full min-h-[200px] " + className}
+                className={"sm:block hidden bg-cover bg-center w-full min-h-[200px] " + className}
                 style={{ backgroundImage: `url('${imageUrl}')` }}
             ></div>
             <img
@@ -15,7 +15,7 @@ const CardProduct = ({ imageUrl, className }: Props) => {
             className={"sm:hidden block bg-cover bg-center w-full min-h-[200px] " + className}
             src={imageUrl}
             ></img>
-            <div>
+            <div className="p-2">
                 <h3 className="font-bold my-2">Risol Mayo</h3>
                 <div className="flex items-center justify-between">
                     <p>Rp 16.000</p>
