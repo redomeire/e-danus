@@ -70,7 +70,7 @@ const Button = ({children,
     return (
         <button 
         onClick={onClick}
-        className={`${!disable ? 'hover:opacity-80' : 'cursor-not-allowed brightness-75'} flex items-center justify-center transition duration-200 ${state !== null ? 'rounded-full w-fit min-w-20' : 'rounded-full'} p-2 ${checkButton()} ` + className}
+        className={`${!disable ? 'hover:opacity-80' : 'cursor-not-allowed brightness-75'} flex items-center justify-center transition duration-200 ${state !== null ? 'rounded-full min-w-20' : 'rounded-full'} p-2 ${checkButton()} ` + className}
         disabled={disable}
         >
             {state === "loading" ? 

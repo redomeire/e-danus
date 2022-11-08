@@ -1,11 +1,16 @@
+import { useNavigate } from "react-router-dom";
+
 interface Props {
     imageUrl?: string,
     className?: string
 }
 
 const CardProduct = ({ imageUrl, className }: Props) => {
+
+    const navigate = useNavigate();
+
     return (
-        <div className="cursor-pointer transition duration-300 min-w-[180px] sm:w-[46%] w-full m-2 hover:shadow-lg rounded-xl border-[1px] border-gray-100">
+        <div onClick={() => navigate('/product/detail')} className="cursor-pointer transition duration-300 min-w-[180px] sm:w-[46%] w-full m-2 hover:shadow-lg rounded-xl border-[1px] border-gray-100">
             <div
                 className={"sm:block hidden bg-cover bg-center w-full min-h-[200px] " + className}
                 style={{ backgroundImage: `url('${imageUrl}')` }}
