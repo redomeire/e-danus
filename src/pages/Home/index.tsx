@@ -2,8 +2,6 @@ import CardProduct from "../../components/Card/CardProduct";
 import UserLayout from "../../components/Layout/UserLayout";
 import Slide1 from "../../images/Home/slider-1.png";
 import { Helmet } from "react-helmet";
-
-import "../../components/Swiper/style.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
