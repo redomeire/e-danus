@@ -1,4 +1,5 @@
 import React from "react";
+import { CSSProperties } from "styled-components";
 import Loading from "../../images/utils/loading.svg";
 
 interface Props {
@@ -8,6 +9,7 @@ interface Props {
     variant?: "base" | "outlined" | "contained",
     className?: string,
     state?: "loading" | "success" | "error",
+    style?: CSSProperties | undefined,
     onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
 
@@ -17,6 +19,7 @@ const Button = ({children,
     variant,
     className,
     state,
+    style,
     onClick
 }: Props) => {
 
@@ -40,7 +43,7 @@ const Button = ({children,
                 text = "text-[#FFC529]"
         }
             
-        if(color === 'secondary') {
+        else if(color === 'secondary') {
             text = "text-white"
 
             if(variant === 'contained' || state === 'error' || state === 'loading')
@@ -72,6 +75,7 @@ const Button = ({children,
         onClick={onClick}
         className={`${!disable ? 'hover:opacity-80' : 'cursor-not-allowed brightness-75'} flex items-center justify-center transition duration-200 ${state !== null ? 'rounded-full min-w-20' : 'rounded-full'} p-2 ${checkButton()} ` + className}
         disabled={disable}
+        style={style}
         >
             {state === "loading" ? 
                 <img src={Loading} alt="loading" className="w-8" /> :
