@@ -1,7 +1,11 @@
 import Food from "../../images/Home/slider-1.png"
 import Button from "../Button";
 
-const CardTransaction = () => {
+interface Props {
+    type?: string
+}
+
+const CardTransaction = ({type} : Props) => {
     return ( 
         <div className="rounded-lg bg-yellow-200 p-3 my-3 transition duration-200">
             <div className="flex items-start">
@@ -25,6 +29,7 @@ const CardTransaction = () => {
                     Lihat Produk
                 </Button>
             </div>
+            {type}
         </div>
      );
 }

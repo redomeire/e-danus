@@ -19,8 +19,16 @@ const datas = [
     },
 ]
 
-const Tabs = () => {
+interface Props {
+    setSelectedData: Function
+}
+
+const Tabs = ({setSelectedData}: Props) => {
     const [isSelected, setIsSelected] = React.useState(datas[0].name);
+
+    React.useEffect(() => {
+        setSelectedData(isSelected);
+    }, [isSelected, setSelectedData])
 
     return ( 
         <div className="flex items-center">
@@ -28,7 +36,10 @@ const Tabs = () => {
                 datas.map((data, index) => (
                     <Button 
                     color="primary"
-                    onClick={() => setIsSelected(data.name)}
+                    onClick={() => { 
+                        setIsSelected(data.name)
+                        setSelectedData(data.name)
+                     }}
                     variant={isSelected === data.name ? 'contained' : 'outlined'}
                     key={index}
                     className='mx-1 text-sm font-semibold'
