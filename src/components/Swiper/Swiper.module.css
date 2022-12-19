@@ -3,7 +3,7 @@
     overflow: unset Im !important;
     overflow-x: hidden !important;
     height: fit-content !important;
-
+    background-color: #fe724c !important;
   }
 
   .swiper-wrapper {
@@ -49,11 +49,4 @@
 
   .swiper-slide:hover {
     filter: brightness(80%) !important;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: fit-content;
-    height: 300px;
-    /* object-fit: cover; */
   }

@@ -7,6 +7,9 @@ const Profile = () => {
             <Helmet>
                 <title>Profil</title>
             </Helmet>
+            <div className="rounded-lg bg-yellow-300 p-2">
+                
+            </div>
         </UserLayout>
      );
 }
